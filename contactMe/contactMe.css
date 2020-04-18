@@ -1,0 +1,97 @@
+body{
+    background-color: rgb(68,68,68);
+}
+
+#container {
+    width: 1024px;
+    margin: auto;
+    background-image: url("contact_us.jpg");
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-rows: auto;
+    grid-template-areas:  
+    "... ... ... form form ..."
+}
+
+div {
+    font-family: cursive;
+    font-size: 30px;
+    color: red;
+}
+
+.field {
+    height: 30px;
+    font-size: 25px;
+    background-color: red;
+}
+
+button {
+    width: 180px;
+    height: 40px;
+    font-size: 30px;
+    font-family: cursive;
+    font-weight: bolder;
+    border-radius: 30%;
+    background-color: red;
+    padding-bottom: 5px;
+}
+
+#comments {
+    width: 300px;
+    height: 110px;
+}
+
+/*#fields {
+    grid-area: fields;
+}
+
+#checkboxes {
+    grid-area: checkboxes;
+}
+
+#radios {
+    grid-area: radios;
+}
+
+#message {
+    grid-area: message;
+}
+
+#submit1 {
+    grid-area: submit1;
+}*/
+form {
+    grid-area: form;
+}
+
+@media (max-width: 1024px) {
+    body {
+        background-color: indigo;
+    }
+
+    #container {
+        width: 798px;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: auto;
+        grid-template-areas:  
+        "... form form ..."
+
+    }
+}
+
+@media (max-width: 798px) {
+    body {
+        background-color: maroon;
+    }
+    
+    #container {
+        width: 500px;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto;
+        grid-template-areas:  
+        "form form"        
+    }
+}
+
